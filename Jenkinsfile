@@ -11,8 +11,8 @@ node {
    		sh 'sudo docker push localhost:5000/app'
    stage 'Acceptance Test'
    		echo 'Running acceptance test'
-        sh 'cd acceptance && sudo ./runAcceptanceTest.sh'
+        	sh 'cd acceptance && sudo ./runAcceptanceTest.sh'
    stage 'Deployment'
 		echo 'Running deplyment'
-        sh 'cd deployment && sudo ./runDockerContainer.sh'
+        	sh 'cd deployment && sudo ./runDockerContainer.sh'
 }
